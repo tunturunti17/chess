@@ -1,0 +1,140 @@
+.participants__container {
+  margin: 13.6rem 0 9rem 0;
+}
+
+.participants__slider {
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.participants__slider-pagination {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+  transform: translateY(-5rem);
+  margin-right: 0.5rem;
+}
+
+.slider__btn-slide-prev:hover > svg circle,
+.slider__btn-slide-next:hover > svg circle {
+  fill: var(--yellow-btn-color);
+}
+
+.btn-prev.disabled > svg circle,
+.btn-next.disabled > svg circle {
+  fill: var(--grey-color);
+}
+
+.quantity {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.quantity__number {
+  color: var(--text-color);
+  font-family: var(--paragraph-font-family);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+}
+
+.participants__slider-view {
+  width: 100%;
+  overflow: hidden;
+}
+
+.participants__slider-wrapper {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease;
+  padding-top: 2rem;
+}
+
+.participants__slider-item {
+  width: calc(39.4rem + 2rem);
+  padding-right: 2rem;
+  height: 46.2rem;
+  flex: 0 0 auto;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-prev,
+.btn-next {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.slide-title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 120%;
+  font-family: var(--paragraph-font-family);
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+.slide-img {
+  width: 32rem;
+  height: 32rem;
+  margin-bottom: 1rem;
+}
+
+.slide-paragraph {
+  font-weight: 400;
+  opacity: 60%;
+  margin: 0.3rem 0 2rem 0;
+}
+
+@media screen and (max-width: 576px) {
+  .participants__container {
+    margin: 8.4rem 0 10rem 0;
+  }
+
+  .participants__slider {
+    transform: translateY(-1.6rem);
+  }
+
+  .participants__slider-pagination {
+    transform: translateY(48.8rem);
+    justify-content: center;
+  }
+
+  .participants__slider-wrapper {
+    gap: 0;
+  }
+
+  .participants__slider-item {
+    width: 33.5rem;
+    height: 39rem;
+    padding-right: 0;
+  }
+
+  .slide-img {
+    width: 24.4rem;
+    height: 24.4rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .slide-title {
+    margin-top: 0;
+  }
+
+  .slide-paragraph {
+    margin: 1rem 0 2rem 0;
+  }
+}

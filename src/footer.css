@@ -1,0 +1,19 @@
+.footer {
+  height: 15rem;
+  background-color: var(--footer-bg);
+}
+
+.footer__paragraph {
+  opacity: 60%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.9rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 6rem 0;
+  }
+}

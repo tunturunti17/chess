@@ -1,0 +1,37 @@
+.ticker {
+  position: relative;
+}
+
+.ticker__content-wrap {
+  height: 6rem;
+  background-color: var(--red-color);
+}
+
+.ticker__content {
+  width: auto;
+  padding: 1.8rem 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.ticker__dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: white;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .ticker__content-wrap {
+    height: 3.8rem;
+    position: relative;
+    top: 2rem;
+    z-index: 25;
+  }
+  
+  .ticker__content {
+    padding: 1.2rem 1rem;
+  }
+}

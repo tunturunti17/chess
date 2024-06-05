@@ -1,0 +1,92 @@
+.poster__container {
+  position: relative;
+}
+
+.poster__titles-margin {
+  margin: 7.5rem 0 7.4rem 0;
+}
+
+.poster__titles-wrapper {
+  width: 100%;
+}
+
+.poster__title {
+  width: 62%;
+}
+
+.title__text-red {
+  color: var(--red-color);
+}
+
+.poster__img {
+  position: absolute;
+  right: 7.2rem;
+  top: 8rem;
+  width: 39.4rem;
+  height: 25rem;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.about-tournament {
+  width: 100%;
+  display: flex;
+  gap: 4.6rem;
+  align-items: center;
+  margin-bottom: 13.6rem;
+}
+
+.about-tournament__img {
+  width: 47.4rem;
+  height: auto;
+}
+
+.chess-player-image {
+  transform: scale(1.12, 1.12);
+}
+
+.about-tournament__content {
+  width: 70.4rem;
+  height: 52.7rem;
+  padding-top: 1rem;
+}
+
+.about-tournament__link {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+  .poster__titles-wrapper {
+    width: 33.5rem;
+    margin: 5rem 0 4.5rem 0;
+  }
+
+  .poster__img {
+    width: 33.5rem;
+    height: 21.2rem;
+    margin: 2.5rem 0;
+    position: unset;
+  }
+
+  .about-tournament {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-tournament__content {
+    width: 33.5rem;
+  }
+
+  .about-tournament__img {
+    width: 33.5rem;
+    height: 40.2rem;
+  }
+
+  .about-tournament__link {
+    font-size: 1.8rem;
+  }
+}

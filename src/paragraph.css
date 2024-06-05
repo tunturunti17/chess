@@ -1,0 +1,33 @@
+.paragraph {
+  color: var(--text-color);
+  font-family: var(--paragraph-font-family);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.text-dark {
+  color: var(--text-color);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue {
+  color: var(--blue-color);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.opacity-60 {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 576px) {
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}

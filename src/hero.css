@@ -1,0 +1,122 @@
+.hero__wrapper {
+  width: 100%;
+  height: 70rem;
+  background: var(--footer-bg);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  place-content: center;
+}
+
+.hero__blend {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-burn;
+  background-image: url(assets/hero-concrete-bg.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  background-image: url(assets/city-circle-bg.webp);
+  background-size: 162.37rem 100%;
+  background-repeat: no-repeat;
+  background-position: 46%;
+}
+
+.hero__container {
+  width: 100%;
+  padding: 2.6rem 7.2rem;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+.hero__logo {
+  display: flex;
+  width: 24.5rem;
+  height: 3.6rem;
+  margin-bottom: 6.2rem;
+}
+
+.hero__content {
+  width: 54.2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.hero__paragraph {
+  margin: 2.4rem 0 3.8rem 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+
+.hero__buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hero__container {
+    max-width: 37.5rem;
+    padding: 1.8rem 2rem;
+  }
+
+  .hero__wrapper {
+    height: 75.5rem;
+  }
+
+  .hero__logo {
+    height: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero__content {
+    justify-content: start;
+  }
+
+  .hero__titles-wrapper {
+    margin-top: 0;
+  }
+
+  .hero__paragraph {
+    text-align: start;
+    margin: 2.4rem 0 3.2rem 0;
+  }
+
+  .hero__bg-img {
+    background-image: url(./assets/city-circle-bg-mobile.webp);
+    background-position: bottom;
+    background-size: contain;
+    bottom: -3.8rem;
+  }
+}
